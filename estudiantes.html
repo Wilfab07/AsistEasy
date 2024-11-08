@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software de Asistencias - Estudiantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Estudiantes</h1>
+        <!-- Botón de cerrar sesión -->
+        <button id="logoutButton">Cerrar Sesión</button>
+    </header>
+    <main>
+        <form id="studentForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso" required>
+            <label for="documento">Documento:</label>
+            <input type="text" id="documento" name="documento" required>
+            <button type="submit">Agregar Estudiante</button>
+        </form>
+
+        <table id="studentsTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Curso</th>
+                    <th>Documento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los estudiantes se agregarán aquí -->
+            </tbody>
+        </table>
+    </main>
+    <script src="students.js"></script>
+</body>
+</html>
