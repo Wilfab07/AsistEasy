@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh; /* Esto asegura que la página ocupe al menos el 100% de la altura */
+}
+
+/* Contenido principal ocupa todo el espacio necesario */
+main {
+    flex: 1; /* Este flex hace que el footer se empuje al final */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo para el formulario */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Botones generales */
+button {
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Botón primario (azul) */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Botón secundario (verde) */
+button.secondary {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+button.secondary:hover {
+    background-color: #218838;
+}
+
+/* Centrando el botón de registrarse */
+.form-footer {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    margin-top: 15px; /* Espaciado superior */
+}
+
+/* Footer fijo al final */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: relative;
+    bottom: 0; /* Esto coloca el footer al pie */
+    margin-top: auto;  /* Esto asegura que el footer esté al final, incluso si hay poco contenido */
+}
+
+footer a {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Botón para regresar al menú */
+.back-to-menu {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-to-menu:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+/* Centrando el botón de registrarse */
+.form-footer {
+    display: flex; /* Flexbox para alineación */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente (opcional) */
+    margin-top: 15px; /* Espaciado superior */
+}
+/* Asegurarse de que el botón de registro esté centrado */
+.login-form .form-footer {
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin-top: 15px; /* Espaciado superior */
+    width: 100%; /* Asegurarse de que tome todo el ancho del formulario */
+}
+
